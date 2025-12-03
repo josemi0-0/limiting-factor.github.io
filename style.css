@@ -7,10 +7,15 @@ html {
   padding: 10px;
   margin-right: 5px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: #EDC068;
+  color: black;
 }
 
 .lf-logo {
   position: relative;
   top: 20px;
+}
+
+.deco-brass {
+  color: #EDC068; 
 }
