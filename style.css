@@ -2,13 +2,36 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Header CSS */
 .button-link {
-  border: 2px solid #333;
+  font-size: 15px;
+  border: 6.7px solid #171616;
   padding: 10px;
   margin-right: 5px;
   margin-bottom: 10px;
   background-color: #EDC068;
-  color: black;
+  color: #171616;
+}
+
+.button-link:hover {
+  background-color: #171616;
+  color: #EDC068;
+  border: 3px solid #EDC068;
+  transition: 0.3s;
+    transition-delay: 0.1s;
+}
+
+
+.headerdiv {
+  position: relative;
+  height: 20px;
+  background-color: #171616;
+  border: 3px solid #EDC068;
+  
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .lf-logo {
@@ -16,6 +39,9 @@ html {
   top: 20px;
 }
 
+
+/* Design Elemts */
 .deco-brass {
   color: #EDC068; 
 }
+
