@@ -72,6 +72,7 @@ html {
   display: block;
 }
 .off-screen-menu ul {
+  transition: 0.3s;
   margin: 20px 0;
   padding: 0;
   list-style-type: none;
@@ -79,28 +80,17 @@ html {
   text-align: center;
 }
 
-/* Add UL LI hover effect for .off-screen-menu */
-.off-screen-menu ul li:hover {
-  background-color: #EDC068;
-  color: #171616;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-.off-screen-menu ul li:hover {
-  color: #171616;
-  /* Optionally remove underline on hover */
-  text-decoration: none;
-}
-
-
-/* Nav Menu */
-.topbar {
-  z-index: 1;
-  padding: 0.5rem;
-  display: flex;
-  border-radius: 5px;
+.off-screen-menu li a {
   transition: 0.3s;
 }
+.off-screen-menu li a:hover {
+  transition: 0.3s;
+  margin-bottom: 5px;
+  border: #EDC068 2px solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 
 /* Hamburger Menu */
 
@@ -108,8 +98,9 @@ html {
   z-index: 2;
   height: 50px;
   width: 50px;
-  margin-right: auto;
-  position: relative;
+  margin: 0.5em 0 0 0.5em;
+  position: fixed;
+  display: block;
   transition: 0.3s ease-in-out;
   div{
   transition: 0.5s;
@@ -117,7 +108,7 @@ html {
   top: 7px;
   height: 5px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
   margin: 0 0 10px 0;
   border-radius: 5px;}
   .one{width: 80%;}
@@ -128,7 +119,7 @@ html {
 .ham-menu:hover {
   rotate: 45deg;
   div{
-  background-color: #EDC068;
+  background-color: rgba(255, 255, 255, 1);
   }
   .one{width: 100%;}
   .two{width: 100%;}
@@ -136,19 +127,15 @@ html {
   }
 
 .ham-menu.active {
-  position: fixed;
-  rotate: 45deg;
+  rotate: 0deg;
   div{
-  background-color: #ffffff;
+  background-color: rgba(237, 192, 104, 0.25);
   }
-  .one{width: 100%;}
-  .two{width: 100%;}
-  .three{width: 100%;}
 }
 
 .ham-menu.active:hover {
   div{
-  background-color: #EDC068;
+  background-color: rgba(237, 192, 104, 1);
   }
   .one{width: 100%;}
   .two{width: 100%;}
@@ -159,7 +146,3 @@ html {
 .deco-brass {
   color: #EDC068; 
 }
-
-
-  
-
