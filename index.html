@@ -10,22 +10,50 @@
   </head>
 
   <!-- Header - Limiting Factor logo and Menu -->
+<l  id="header"></l>
+  <!-- Hamburger Menu -->
 
-  <!-- Top Of The Screen -->
-   <div class="topbar">
-  <!-- 3-Line Menu -->
+<div class="off-screen-menu">
+  <ul class="hamitemlist">
+    <li> <a href="#header"> Home </a> </li>
+    <li> <a href="#about-us"> About Us </a> </li>
+    <li> <a href="#footer"> Footer </a> </li>
+  </ul>
+</div>
 
-  <a href="#" class="nav">
+<div class="topbar"></div>
+  <div class="ham-menu">
     <div class="one"></div>
     <div class="two"></div>
     <div class="three"></div>
-  </a>
+  </div>
+</nav>
+
+<script>
+const hamMenu = document.querySelector(".ham-menu");
+
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+})
+
+const hamitemlist = document.querySelectorAll(".hamitemlist");
+
+hamMenu.addEventListener("click", () => {
+  hamitemlist.forEach((item) => {
+    item.addEventListener("click", () => {
+      hamMenu.classList.remove("active");
+      offScreenMenu.classList.remove("active");
+    });
+  });
+});
+</script>
 
   <!-- Header Section -->
-</div>
-<br/>
-  <header style="text-align:center" id="header">    
-    <h1 style="font-size: 4em; margin:0px"> <img src="https://github.com/josemi0-0/josemi0-0.github.io/blob/main/assets/j8h91A9.png?raw=true" height="125" class="lf-logo"/> Limiting Factor&#8482; </h1>
+  <header style="text-align:center;">    
+    <h1 style="font-size: 3.25em; margin:0px"> <img src="https://github.com/josemi0-0/josemi0-0.github.io/blob/main/assets/j8h91A9.png?raw=true" height="100" class="lf-logo"/> Limiting Factor&#8482; </h1>
     <h2 style="font-size: 2em; margin: 0 10 0 0;"> Where <u>You</u> Set Your Own Limits</h2>
     
     <hr />
@@ -41,13 +69,11 @@
       <a class= "button-link" href=#footer> Bottom Of The Page </a> -->
 
     </div> <br /> <hr /> </strong> </div>
-
       </header>
 
       <!-- Body -->
 
       <body>
-
   <!-- About Us -->
   <h1 id="about-us" class="deco-brass"> About Us: </h1>
   <p>
@@ -79,13 +105,4 @@
           <h5 style="text-align: center;"> <strong> &copy; 2025 Limiting Factor&#8482; </strong> <br/><br/><br/>
           <a href="#header" class="button-link" style="margin-top: 10px"> Back to Top </a> </h5>
         </footer>
-<script>
-  const navMenu = document.querySelector('.nav');
-  if (navMenu) {
-    navMenu.addEventListener('click', function(e) {
-      e.preventDefault();
-      navMenu.classList.toggle('active');
-    });
-  }
-</script>
 </html>
