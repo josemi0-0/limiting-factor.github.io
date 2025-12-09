@@ -1,6 +1,7 @@
 /* Welcome to CSS! */
 
 html {
+    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
     background-image: url("https://github.com/josemi0-0/josemi0-0.github.io/blob/main/assets/main/backgroundcustom.png?raw=true");
     background-size: cover;
@@ -14,13 +15,18 @@ body {
 }
 
 .hlimiting1 {
-    font-size: 4em;
-    margin-bottom: 0px;
+    font-size: 3.25em;
+    margin: 0 0 0 2em;
 }
 
 .hlimiting2 {
-    margin-top: 0px;
+    margin: 0 0 0 3.5em;
     font-size: 2em;
+}
+
+.lf-logo {
+  position: relative;
+  top: 53.5px;
 }
 
 .outdiv {
@@ -28,7 +34,7 @@ body {
   position: relative;
   height: 20px;
   border: 3px solid transparent;
-  border-image: linear-gradient(to right, #F5F1E3, #559CAD) 1;
+  border-image: linear-gradient(to right, #F5F1E3, #54aaad, #F5F1E3) 1;
   justify-content: center;
   align-items: center;
   margin: 0px 0px 50px 0px;
@@ -36,12 +42,19 @@ body {
 
 .button-link {
     font-size: 15px;
-    border: #191718 3px solid;
+    border: rgba(255, 255, 255, 1) 3px solid;
     padding: 10px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    background-color: #a7a5a6;
-    color: #171616;
+    margin: 0 5px 10px 5px;
+    background-color: #54aaad;
+    color: #ffffff;
     transition: 0.3s;
     text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #54aaad;
+  transition-delay: 0.1s; 
 }
