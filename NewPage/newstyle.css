@@ -2,14 +2,15 @@
 
 html {
     scroll-behavior: smooth;
-    background-image: ..assets/background.jpg;
+    background-image: url("https://github.com/josemi0-0/josemi0-0.github.io/blob/main/assets/backgroundcustom.jpg?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
 }
 
 body {
-    text-align: center;
+    text-align: left;
 }
 
 .hlimiting1 {
@@ -23,10 +24,11 @@ body {
 }
 
 .outdiv {
+  text-align: center;
   position: relative;
   height: 20px;
-  background-color: white;
-  border: 3px solid red;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, #F5F1E3, #559CAD) 1;
   justify-content: center;
   align-items: center;
   margin: 0px 0px 50px 0px;
@@ -34,11 +36,11 @@ body {
 
 .button-link {
     font-size: 15px;
-    border: 6.7px solid #171616;
+    border: #191718 3px solid;
     padding: 10px;
     margin-right: 5px;
     margin-bottom: 10px;
-    background-color: #EDC068;
+    background-color: #a7a5a6;
     color: #171616;
     transition: 0.3s;
     text-decoration: none;
