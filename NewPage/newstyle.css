@@ -7,6 +7,19 @@
   --contrast-text: #ffffff;
 }
 
+/* Custom Fonts */
+
+@font-face {
+  font-family: 'Kanit';
+  src: url(../assets/fonts/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Bitcount';
+  src: url(../assets/fonts/BBHHegarty-Regular.ttf);
+}
+
+/* CSS Overalls */
 
 html {
   scroll-behavior: smooth;
@@ -16,6 +29,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   background: var(--background);
   transition: 0.3s;
@@ -26,45 +40,77 @@ body {
   --background-op: #f8f5ec;
   --ac-cont: #03b5aa;
   --contrast-text: #ffffff;
-  --h1: bold max(36px, 4vw) / max(48px, 5vw) var(--ff);
-  --ff: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 } */
+
+  /* Nav Menu */
 
 nav {
   transition: 0.3s;
-  background: var(--background-op);
-  padding: 1rem 2rem;
-  width: 100%;
+  background: #161616;
+  padding: 1rem 0 1em 0;
+  width: 100vw;
   height: 3vh;
-  border-bottom: var(--ac1) solid 5px;
+  border-bottom: #363636 solid 5px;
+}
+
+.switch {
+  margin: 0 0 0 0.5em;
 }
 
 
 h1, h2, h3 {
-  font-family: "BBH-Hegartly";
+  font-family: "Bitcount";
+  letter-spacing: px;
   transition: 0.3s;
 }
 
+p {
+  font-family: "Kanit";
+  transition: 0.1s;
+}
+
 @media screen and (min-width: 768px) {
-  h1 { font-size: 3em; }
-  h2 { font-size: 2em; }
-  h3 { font-size: 1.5em;}
-  p { font-size: 1.2em;}
+  .hero h1 { font-size: 5em; }
+  .hero h2 { font-size: 3em; }
+  .hero h3 { font-size: 2.5em;}
+  .hero p { font-size: 1.2em;}
+  .hero .border p { padding: 0.75em;}
   }
 
+@media screen and (max-width: 768px) {
+  .hero h1 { font-size: 2em; }
+  .hero h2 { font-size: 1.75em; }
+  .hero h3 { font-size: 1.5em;}
+  .hero p { font-size: 0.8em;}
+  .hero .border p { padding: 0.7em;}
+  }
 
-.hero, .hero-image {
-  display: flex;
-  margin: 2em 0 0 0;
+h1,h2,h3 {
+  margin: 0 0 0 0;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0 0 2em;
   color: var(--contrast-text);
 }
 
-.hero {
-  width: 50vw;
+.hero .border {
+  display: flex;
+  height: 2em;
+  width: 100;
+  border: var(--ac2) solid 3px;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5em 0 1.5em 0;
 }
 
-
-h1,h2,h3 {
-  margin: 0;
+.hero .border p{
+  background: var(--background);
+  border: var(--ac2) solid 3px;
 }
-
