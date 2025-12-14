@@ -284,43 +284,33 @@ h1,h2,h3 {
 .abt-us {
   justify-content: center;
   align-items: center;
-  color: var(--textl);
+  color: var(--text);
   margin: 0 1em 0 1em;
 }
 
+.abt-us-header {
+  border: var(--ac2) solid 3px;
+  height: 2em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.abt-us-heading {
+  background: var(--background);
+  position: relative;
+  left: -10px;
+  padding: 5px;
+  border-right: var(--ac2) solid 3px;
+  transition: 0.3s;
+}
+
+
+
 .abt-us h1, .abt-us h2 {
   letter-spacing: 2px;
-  margin: 1em 0 0.5em 0;
-}
-
-.abt-us-contain {
-  margin: 0 0 0 0;
-  padding: 0 0 2em 0;
-  height: 4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: var(--ac2) solid 3px;
-}
-
-.abt-us-left {
-  border: red solid 2px;
-  width: 60%;
-}
-
-.abt-us-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1em 0 1em;
-  border: blue solid 2px;
-  width: 40%;
 }
 
 .abt-us-right img {
   width: 75%;
-}
-.abt-us-header {
-  background-color: var(--background);
-  transition: 0.3s;
 }
