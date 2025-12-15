@@ -300,17 +300,23 @@ h1,h2,h3 {
   background: var(--background);
   position: relative;
   left: -10px;
-  padding: 5px;
+  padding: 1em;
   border-right: var(--ac2) solid 3px;
   transition: 0.3s;
 }
-
-
 
 .abt-us h1, .abt-us h2 {
   letter-spacing: 2px;
 }
 
-.abt-us-right img {
-  width: 75%;
+.abt-us-titles {
+  display: flex;
+  justify-content: center;
 }
+
+.abt-us .founding, .abt-us .employed {
+  width: 50%;
+  text-align: center;
+  ul {
+  list-style: none;
+}}
